@@ -10,6 +10,14 @@
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease-in-out;
+  position: relative;
+  .arrow {
+    position: absolute;
+    top: 45px;
+    font-size: 3.6rem;
+    color: $red;
+  }
+
   .about-text-wrapper {
     display: flex;
     flex-direction: row;
@@ -35,7 +43,6 @@
       height: 100%;
       width: 50%;
       transition: all 0.5s ease-in-out;
-
       h1 {
         padding-left: 5rem;
         padding-right: 3rem;
@@ -107,6 +114,33 @@
         margin-left: 0rem;
       }
     }
+  }
+}
+
+@media screen and (min-width: 451px) {
+  #about {
+    .arrow {
+      display: none;
+    }
+    .dot-style {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #about {
+    background: rgb(241, 178, 173);
+    background: linear-gradient(
+      120deg,
+      rgba(246, 196, 192, 1) 0%,
+      rgba(241, 178, 173, 1) 50%,
+      rgba(231, 169, 165, 1) 100%
+    );
+  }
+  .dot-style {
+    position: absolute;
+    bottom: 10px;
   }
 }
 

@@ -9,6 +9,13 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  .arrow {
+    position: absolute;
+    top: 45px;
+    font-size: 3.6rem;
+    color: $red;
+  }
   #form {
     display: flex;
     flex-direction: column;
@@ -220,5 +227,25 @@
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 451px) {
+  #contact {
+    .arrow {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #contact {
+    background: rgb(241, 178, 173);
+    background: linear-gradient(
+      120deg,
+      rgba(246, 196, 192, 1) 0%,
+      rgba(241, 178, 173, 1) 50%,
+      rgba(231, 169, 165, 1) 100%
+    );
   }
 }
