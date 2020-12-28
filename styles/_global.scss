@@ -33,6 +33,13 @@ html {
   background: rgba(255, 255, 255, 0.671);
 }
 
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
 /*
 font-family: 'Josefin Sans', sans-serif;
 Regular 400
