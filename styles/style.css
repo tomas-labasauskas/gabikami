@@ -1342,16 +1342,10 @@ body {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  -webkit-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
 }
 
 .pics .img-container:hover {
   cursor: pointer;
-}
-
-.pics .img-container:hover .pic {
-  height: 550px;
 }
 
 .pics .img-container .description {
@@ -1461,9 +1455,6 @@ body {
   }
   .pics .img-container:hover {
     cursor: initial;
-  }
-  .pics .img-container:hover .pic {
-    height: 80vh;
   }
   .pics .img-container .description {
     margin-bottom: 24px;

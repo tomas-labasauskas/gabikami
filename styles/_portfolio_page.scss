@@ -57,14 +57,10 @@ body {
     width: 355px;
     object-fit: cover;
     object-position: top;
-    transition: all 0.6s ease-in-out;
   }
   .img-container {
     &:hover {
       cursor: pointer;
-      .pic {
-        height: 550px;
-      }
     }
     .description {
       color: $white;
@@ -152,9 +148,6 @@ body {
     .img-container {
       &:hover {
         cursor: initial;
-        .pic {
-          height: 80vh;
-        }
       }
       .description {
         margin-bottom: 24px;
