@@ -1342,6 +1342,16 @@ body {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.pics .img-container:hover {
+  cursor: pointer;
+}
+
+.pics .img-container:hover .pic {
+  height: 550px;
 }
 
 .pics .img-container .description {
@@ -1354,6 +1364,73 @@ body {
   margin-top: 12px;
   padding-bottom: 20px;
   background: #302f2f;
+}
+
+.full-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #1b1b1bc4;
+}
+
+.full-screen .exit {
+  font-size: 3rem;
+  background: none;
+  margin-left: 2rem;
+  margin-top: 7rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.full-screen .exit:hover {
+  color: #df050a;
+}
+
+.full-screen .img-cont {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.full-screen .img-cont .pic {
+  height: 85%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.full-screen .img-cont .description {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 20px;
+  margin-top: 12px;
+  padding-bottom: 20px;
+  background: #302f2f;
+  width: 100%;
 }
 
 @media screen and (max-width: 1230px) {
@@ -1381,6 +1458,12 @@ body {
     width: 95vw;
     height: 80vh;
     min-height: 60rem;
+  }
+  .pics .img-container:hover {
+    cursor: initial;
+  }
+  .pics .img-container:hover .pic {
+    height: 80vh;
   }
   .pics .img-container .description {
     margin-bottom: 24px;
