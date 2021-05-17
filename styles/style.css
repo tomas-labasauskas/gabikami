@@ -40,13 +40,16 @@ button:focus {
 }
 
 /*
-font-family: 'Josefin Sans', sans-serif;
+Light 300
+Light 300 italic
 Regular 400
-Semi-bold 600
-Bold 700
-
-font-family: 'Montserrat', sans-serif;
+Regular 400 italic
 Medium 500
+Medium 500 italic
+Semi-bold 600
+Semi-bold 600 italic
+Bold 700
+Bold 700 italic
 */
 @media screen and (max-width: 1000px) {
   html {
