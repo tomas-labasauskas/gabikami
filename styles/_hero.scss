@@ -1,0 +1,37 @@
+.hero {
+  max-width: 125rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 7.5rem;
+  transition: all 0.2s ease-in-out;
+  margin-top: 10rem;
+  .hero-cont {
+    margin-left: 2rem;
+    .hero-text {
+      margin-top: 10rem;
+      max-width: 50rem;
+      h1 {
+        font-weight: 600;
+        letter-spacing: 3px;
+        font-size: 3rem;
+      }
+      p {
+        margin-top: 4rem;
+      }
+      .btns {
+        margin-top: 10rem;
+        .contact-btn {
+          background: black;
+          color: white;
+          margin-right: 3rem;
+          &:hover {
+            background: #df050a;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}

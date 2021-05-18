@@ -1,0 +1,48 @@
+header {
+  max-width: 125rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 7.5rem;
+  transition: all 0.2s ease-in-out;
+  align-items: flex-end;
+  //background-color: pink;
+  .logo {
+    margin-left: 2rem;
+  }
+  nav {
+    .desk-menu {
+      min-width: 52rem;
+      margin-right: 2rem;
+      font-size: 16px;
+      display: flex;
+      flex-direction: row;
+      align-self: flex-end;
+      justify-content: space-between;
+      li {
+        .active {
+          opacity: 100%;
+        }
+        a {
+          opacity: 50%;
+          &:hover {
+            opacity: 100%;
+          }
+        }
+        .portfolio-btn {
+          opacity: 100%;
+          padding: 2rem 3rem;
+          border: black solid 2px;
+          border-radius: 8px;
+          font-weight: 500;
+          transition: all 0.1s ease-in-out;
+          &:hover {
+            background: black;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
