@@ -9,6 +9,10 @@
   margin-top: 10rem;
   .hero-cont {
     margin-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
     .hero-text {
       margin-top: 10rem;
       max-width: 50rem;
@@ -29,6 +33,125 @@
           &:hover {
             background: #df050a;
             color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero-links {
+  align-self: center;
+  margin-right: 10rem;
+  margin-left: 4rem;
+  .links {
+    display: flex;
+    flex-direction: column;
+    border: black solid 2px;
+    border-radius: 8px;
+    padding: 2rem 1rem;
+    position: relative;
+    a {
+      margin: 1.5rem;
+      svg {
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          fill: #df050a;
+        }
+      }
+    }
+    .red-stroke {
+      position: absolute;
+      top: -20px;
+      left: -18px;
+      z-index: -10;
+    }
+  }
+}
+
+@media screen and (min-width: 740px) {
+  .links-mob {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .links-desk {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .hero {
+    flex-direction: column-reverse;
+    .hero-cont {
+      width: auto;
+      margin-right: 2rem;
+    }
+    .mob-cont {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .links-mob {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .links-mob {
+    margin-right: 4rem;
+  }
+  #hero-pic {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .links-mob {
+    .links {
+      padding: 1.5rem 0.5rem;
+      .red-stroke {
+        left: -24px;
+      }
+      a {
+        svg {
+          width: 2.4rem;
+        }
+      }
+    }
+  }
+  #hero-pic {
+    width: 20rem;
+  }
+
+  .hero {
+    .hero-cont {
+      .hero-text {
+        margin-top: 4rem;
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.6rem;
+          margin-top: 2rem;
+        }
+        .btns {
+          margin-top: 4rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .hero {
+    .hero-cont {
+      .hero-text {
+        .btns {
+          .portfolio-btn {
+            display: none;
           }
         }
       }

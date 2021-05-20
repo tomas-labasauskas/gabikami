@@ -7,6 +7,7 @@
 html {
   font-size: 62.5%;
   transition: all 0.2s ease-in-out;
+  scroll-behavior: smooth;
 }
 
 // CUSTOM SCROLLBAR
@@ -18,18 +19,18 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.089);
+  background: rgba(0, 0, 0, 0.199);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.349);
-  border-radius: 90px;
+  background: rgba(0, 0, 0, 0.349);
+  //border-radius: 90px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.671);
+  background: rgba(0, 0, 0, 0.671);
 }
 
 input:focus,
@@ -65,6 +66,7 @@ li {
   width: 33rem;
   margin-right: 2rem;
   border-radius: 16px;
+  transition: all 0.2s ease-in-out;
 }
 
 p {

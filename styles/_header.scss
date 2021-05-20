@@ -46,3 +46,16 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 740px) {
+  header {
+    nav {
+      .desk-menu {
+        min-width: 10rem;
+        .id-nav {
+          display: none;
+        }
+      }
+    }
+  }
+}
