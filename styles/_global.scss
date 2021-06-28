@@ -19,12 +19,12 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.199);
+  background: rgba(0, 0, 0, 0);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.349);
+  background: rgba(0, 0, 0, 0.301);
   //border-radius: 90px;
 }
 
@@ -67,6 +67,7 @@ li {
   margin-right: 2rem;
   border-radius: 16px;
   transition: all 0.2s ease-in-out;
+  object-fit: cover;
 }
 
 p {
@@ -84,6 +85,7 @@ p {
   &:hover {
     background: black;
     color: white;
+    cursor: pointer;
   }
 }
 

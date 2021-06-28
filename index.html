@@ -19,6 +19,7 @@
     />
     <link rel="icon" href="./img/favicon.svg" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>Makiažas Vilniuje - proginis, dieninis, vakarinis makiažas</title>
   </head>
 
@@ -35,8 +36,8 @@
         <ul class="desk-menu">
           <li><a class="active id-nav" href="#pradzia">PRADŽIA</a></li>
           <li><a class="id-nav" href="#apie">APIE</a></li>
-          <li><a class="id-nav" href="#">KAINOS</a></li>
-          <li><a class="id-nav" href="#">KONTAKTAI</a></li>
+          <li><a class="id-nav" href="#kainos">KAINOS</a></li>
+          <li><a class="id-nav" href="#kontaktai">KONTAKTAI</a></li>
           <li><a href="#" class="portfolio-btn">PORTFOLIO</a></li>
         </ul>
       </nav>
@@ -169,14 +170,173 @@
     </section>
 
     <section class="about" id="apie">
-      <div class="about-cont"></div>
-      <img src="./img/make-up-portfolio/2.jpg" alt="" class="side-pic" />
+      <div class="about-cont">
+        <img
+          src="./img/profile.jpg"
+          id="profile-pic"
+          alt="Gabija Kaminskaitė"
+        />
+
+        <div class="about-text-cont">
+          <h1>GABIJA_KAMINSKAITĖ</h1>
+          <ul>
+            <li>Naudoju profesionalią aukščiausios kokybės kosmetiką.</li>
+            <li>Turiu sukaupus 4 metų patirtį mados makiažo industrijoje.</li>
+            <li>Dirbu su Lissome ir Modilinos modelių agentūromis.</li>
+            <li>Esu Įvaizdžio Dizaino Vilniaus Kolegijoje absolventė.</li>
+            <li>
+              Dirbu studijoje arba galiu atvykti į Jūsų pasirinktą vietą
+              Vilniuje.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img
+        src="./img/make-up-portfolio/2.jpg"
+        alt=""
+        class="about-pic side-pic"
+      />
     </section>
+
+    <section class="prices" id="kainos">
+      <div class="prices-cont">
+        <div class="price">
+          <div class="price-name">
+            <img src="./img/icons/dieninis.svg" class="price-icon" alt="" />
+            <p>Dieninis:</p>
+          </div>
+          <p>20€</p>
+        </div>
+        <div class="price">
+          <div class="price-name">
+            <img src="./img/icons/vakarinis.svg" class="price-icon" alt="" />
+            <p>Vakarinis:</p>
+          </div>
+          <p>35€</p>
+        </div>
+        <div class="price">
+          <div class="price-name">
+            <img src="./img/icons/proginis.svg" class="price-icon" alt="" />
+            <p>Proginis:</p>
+          </div>
+          <p>35€</p>
+        </div>
+        <div class="price">
+          <div class="price-name">
+            <img src="./img/icons/nuotakos.svg" class="price-icon" alt="" />
+            <p>Nuotakos:</p>
+          </div>
+          <p>60€</p>
+        </div>
+        <div class="price">
+          <div class="price-name">
+            <img src="./img/icons/nuotakos.svg" class="price-icon" alt="" />
+            <p>Nuotakos bandomasis:</p>
+          </div>
+          <p>50€</p>
+        </div>
+        <div class="price">
+          <div class="price-name">
+            <img src="./img/icons/fotosesija.svg" class="price-icon" alt="" />
+            <p>Fotosesijai:</p>
+          </div>
+          <p>40€</p>
+        </div>
+        <div class="price">
+          <div class="price-name">
+            <img src="./img/icons/jaunikio.svg" class="price-icon" alt="" />
+            <p>Jaunikio grimas:</p>
+          </div>
+          <p>20€</p>
+        </div>
+        <div class="price">
+          <div class="price-name">
+            <img src="./img/icons/blakstienos.svg" class="price-icon" alt="" />
+            <p>Blakstienos:</p>
+          </div>
+          <p>5-10€</p>
+        </div>
+        <div class="price">
+          <div class="price-name">
+            <img src="./img/icons/sukuosena.svg" class="price-icon" alt="" />
+            <p>Šukuosena:</p>
+          </div>
+          <p>20€</p>
+        </div>
+        <div class="price" id="bottom-price">
+          <div class="price-name">
+            <img src="./img/icons/kelione.svg" class="price-icon" alt="" />
+            <p>Kelionė iki Jūsų (Vilniuje):</p>
+          </div>
+          <p>5€</p>
+        </div>
+      </div>
+
+      <img
+        src="./img/make-up-portfolio/12.jpg"
+        class="side-pic prices-pic"
+        alt=""
+      />
+    </section>
+
+    <section class="contact" id="kontaktai">
+      <div class="contact-cont">
+        <form
+          action="/iki-pasimatymo/"
+          name="Užsakymai"
+          method="POST"
+          data-netlify="true"
+          autocomplete="off"
+        >
+          <input
+            name="El. Paštas:"
+            type="email"
+            placeholder="El. Paštas"
+            autocomplete="off"
+          />
+          <input
+            name="Tel. Nr.:"
+            type="tel"
+            placeholder="Tel. Nr."
+            autocomplete="off"
+          />
+          <textarea name="Žinutė:" placeholder="Žinutė"></textarea>
+          <button type="submit" class="btn send-btn">SIŪSTI</button>
+        </form>
+        <div class="contact-info">
+          <div class="line-info">
+            <i data-feather="mail"></i>
+            <p>gabijakaminskate@gmail.com</p>
+          </div>
+          <div class="line-info">
+            <i data-feather="map-pin"></i>
+            <p>Vilnius MOLĖTŲ PL. 47F</p>
+          </div>
+          <div class="line-info">
+            <i data-feather="phone"></i>
+            <p>+370 662 00010</p>
+          </div>
+        </div>
+      </div>
+
+      <img src="./img/make-up-portfolio/1.jpg" class="side-pic contact-pic" />
+    </section>
+
+    <footer>
+      <div class="footer-cont">
+        <a id="labasauskas" href="https://www.labasauskas.com/" target="blank"
+          >2021 | © Designed by T.L.</a
+        >
+      </div>
+    </footer>
     <!-- FONT AWESOME -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
       integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ=="
       crossorigin="anonymous"
     ></script>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

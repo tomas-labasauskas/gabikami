@@ -4,9 +4,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-height: 7.5rem;
+  align-items: center;
+  height: 92vh;
+  min-height: 65rem;
   transition: all 0.2s ease-in-out;
-  margin-top: 10rem;
+  margin-top: 0rem;
+  //background: pink;
   .hero-cont {
     margin-left: 2rem;
     display: flex;
@@ -14,7 +17,7 @@
     justify-content: space-between;
     width: 100%;
     .hero-text {
-      margin-top: 10rem;
+      //margin-top: 10rem;
       max-width: 50rem;
       h1 {
         font-weight: 600;
@@ -41,7 +44,7 @@
 }
 
 .hero-links {
-  align-self: center;
+  //align-self: center;
   margin-right: 10rem;
   margin-left: 4rem;
   .links {
@@ -84,14 +87,24 @@
 @media screen and (max-width: 740px) {
   .hero {
     flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 10rem;
     .hero-cont {
       width: auto;
       margin-right: 2rem;
+      .hero-text {
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+      }
     }
     .mob-cont {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
+      width: 100%;
     }
   }
   .links-mob {
@@ -138,7 +151,7 @@
           margin-top: 2rem;
         }
         .btns {
-          margin-top: 4rem;
+          margin-top: 6rem;
         }
       }
     }
