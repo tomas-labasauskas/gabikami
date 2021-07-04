@@ -21,6 +21,11 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="https://unpkg.com/feather-icons"></script>
     <title>Makiažas Vilniuje - proginis, dieninis, vakarinis makiažas</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
 
   <body>
@@ -46,11 +51,28 @@
     <section class="hero" id="pradzia">
       <div class="hero-cont">
         <div class="hero-text">
-          <h1>MAKIAŽAS _ VILNIUJE</h1>
+          <h1>Gaivus makiažas Vilniuje skirtas tik Tau</h1>
           <p>
+            Profesionalia visažiste Gabija pasitiki didžiausios modelių
+            agentūros Lietuvoje:
+            <a
+              href="https://lissomemodel.com/"
+              class="hero-text-links"
+              target="_blank"
+              >Lissome Model</a
+            >
+            ir
+            <a
+              href="https://modilinos.com/"
+              class="hero-text-links"
+              target="_blank"
+              >Modilinos</a
+            >
+          </p>
+          <!--<p>
             Profesionalus makiažas bet kuriai progai: išleistuvėms, fotosesijai,
             verslo susitikimui ar iškilmingai vakarienei.
-          </p>
+          </p>-->
 
           <div class="btns">
             <a href="#" class="contact-btn btn">UŽSISAKYTI</a>
@@ -167,6 +189,73 @@
           id="hero-pic"
         />
       </div>
+    </section>
+
+    <section class="reviews swiper-container" id="atsiliepimai">
+      <div class="cards-cont swiper-wrapper">
+        <div class="rev-card swiper-slide">
+          <div class="auth-cont">
+            <img src="./img/icon-1.jpg" class="auth-pic" />
+            <div class="rate-cont">
+              <h2>Rūta Masiulienė</h2>
+              <img src="./img/5-star-rating.svg" />
+            </div>
+          </div>
+          <p>
+            Gabijai jau ne vieną kartą patikėjau makiažą svarbių gyvenimo
+            švenčių proga ir niekada negalėdavau labiau atsidžiaugti
+            rezultatais. Atliktas makiažas visada būdavo itin profesionalus,
+            originalus ir kruopštus. Gabija atvykdavo punktualiai, laiku ir su
+            gera nuotaika viską spėdavo atlikti. Tikiuosi dar ne kartą
+            pasinaudoti paslaugomis ir kitiems tikrai rekomenduoju.
+          </p>
+        </div>
+
+        <div class="rev-card swiper-slide">
+          <div class="auth-cont">
+            <img src="./img/icon-2.jpg" class="auth-pic" />
+            <div class="rate-cont">
+              <h2>Nomeda Šidagytė</h2>
+              <img src="./img/5-star-rating.svg" />
+            </div>
+          </div>
+          <p>
+            Labai rekomenduoju rinktis Gabiją, nes: <br />
+            <br />
+            1. Kruopščiai atlieka savo darbą <br />
+            2. Visada įgyvendina, tai ko nori <br />
+            3. Dirba su labai kokybiškom priemonėm <br />
+            <br />
+            P.S pilnas pasitikėjimas šiuo meistru, ypač po daugybės fotosesijų
+            kartu. AČIŪ
+          </p>
+        </div>
+
+        <div class="rev-card swiper-slide">
+          <div class="auth-cont">
+            <img src="./img/icon-3.jpg" class="auth-pic" />
+            <div class="rate-cont">
+              <h2>Daisy Evance</h2>
+              <img src="./img/5-star-rating.svg" />
+            </div>
+          </div>
+          <p>
+            Our modeling agency works with Gabija often for our photoshoots. She
+            does each make exactly as requested. She always comes in a great
+            mood and is very sweet and polite to all the models. For our agency,
+            Gabija has done make up ranging from no makeup look, to sweet
+            pastels tones, to dramatic makeup. Would recommend her for any
+            photoshoot or any other occasion.
+          </p>
+        </div>
+      </div>
+
+      <a
+        href="https://paslaugos.lt/gabija-kaminskaite-gv378"
+        target="_blank"
+        class="all-revs"
+        >Skaityti Visus Atsiliepimus</a
+      >
     </section>
 
     <section class="about" id="apie">
@@ -293,14 +382,19 @@
             type="email"
             placeholder="El. Paštas"
             autocomplete="off"
+            required
           />
           <input
             name="Tel. Nr.:"
             type="tel"
             placeholder="Tel. Nr."
             autocomplete="off"
+            required
           />
-          <textarea name="Žinutė:" placeholder="Žinutė"></textarea>
+          <textarea
+            name="Žinutė:"
+            placeholder="Data, laikas, makiažo tipas ir jūsų norai..."
+          ></textarea>
           <button type="submit" class="btn send-btn">SIŪSTI</button>
         </form>
         <div class="contact-info">
@@ -337,6 +431,16 @@
     ></script>
     <script>
       feather.replace();
+    </script>
+
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        spaceBetween: 20,
+        slidesPerView: 1.2,
+      });
     </script>
   </body>
 </html>

@@ -223,11 +223,20 @@ header nav .desk-menu li .portfolio-btn:hover {
 .hero .hero-cont .hero-text h1 {
   font-weight: 600;
   letter-spacing: 3px;
-  font-size: 3rem;
+  line-height: 3.6rem;
+  font-size: 2.6rem;
 }
 
 .hero .hero-cont .hero-text p {
   margin-top: 4rem;
+}
+
+.hero .hero-cont .hero-text .hero-text-links {
+  font-weight: 600;
+}
+
+.hero .hero-cont .hero-text .hero-text-links:hover {
+  text-decoration: underline;
 }
 
 .hero .hero-cont .hero-text .btns {
@@ -381,6 +390,102 @@ header nav .desk-menu li .portfolio-btn:hover {
   .hero .hero-cont .hero-text .btns .portfolio-btn {
     display: none;
   }
+}
+
+.swiper-container {
+  width: auto;
+  height: auto;
+}
+
+.reviews {
+  max-width: 125rem;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.reviews .cards-cont {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.reviews .cards-cont .rev-card {
+  border: black solid 2px;
+  border-radius: 16px;
+  width: 36rem;
+  min-height: 45rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  margin: 0.5rem;
+}
+
+.reviews .cards-cont .rev-card .auth-cont {
+  margin-top: 3rem;
+  margin-left: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.reviews .cards-cont .rev-card .auth-cont .auth-pic {
+  border-radius: 90rem;
+  max-height: 70px;
+}
+
+.reviews .cards-cont .rev-card .auth-cont .rate-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 3rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.reviews .cards-cont .rev-card .auth-cont .rate-cont h2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.reviews .cards-cont .rev-card p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.reviews .all-revs {
+  font-size: 1.6rem;
+}
+
+.reviews .all-revs:hover {
+  text-decoration: underline;
 }
 
 .about {
