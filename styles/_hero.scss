@@ -10,6 +10,9 @@
   transition: all 0.2s ease-in-out;
   margin-top: 0rem;
   //background: pink;
+  .hero-pic {
+    height: 55rem;
+  }
   .hero-cont {
     margin-left: 2rem;
     display: flex;
@@ -26,7 +29,7 @@
         font-size: 2.6rem;
       }
       p {
-        margin-top: 4rem;
+        margin-top: 6rem;
       }
       .hero-text-links {
         font-weight: 600;
@@ -35,7 +38,7 @@
         }
       }
       .btns {
-        margin-top: 10rem;
+        margin-top: 14rem;
         .contact-btn {
           background: black;
           color: white;
@@ -147,6 +150,9 @@
   }
 
   .hero {
+    .hero-pic {
+      height: 35rem;
+    }
     .hero-cont {
       .hero-text {
         margin-top: 4rem;
