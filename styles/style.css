@@ -125,7 +125,7 @@ header .logo {
 }
 
 header nav .desk-menu {
-  min-width: 45rem;
+  min-width: 42rem;
   margin-right: 2rem;
   font-size: 16px;
   display: -webkit-box;
@@ -203,6 +203,8 @@ header nav .desk-menu li .portfolio-btn:hover {
 
 .hero .hero-pic {
   height: 55rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .hero .hero-cont {
@@ -478,6 +480,11 @@ header nav .desk-menu li .portfolio-btn:hover {
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
+  padding-right: 1rem;
+}
+
+.reviews .cards-cont .rev-card .auth-cont .rate-cont .stars {
+  width: 12rem;
 }
 
 .reviews .cards-cont .rev-card p {
@@ -488,11 +495,45 @@ header nav .desk-menu li .portfolio-btn:hover {
 }
 
 .reviews .all-revs {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .reviews .all-revs:hover {
-  text-decoration: underline;
+  color: #df050a;
+}
+
+@media screen and (max-width: 930px) {
+  .reviews .cards-cont .rev-card3 {
+    display: none;
+  }
+  .reviews .cards-cont .rev-card {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .reviews .cards-cont .rev-card3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .reviews .cards-cont .rev-card {
+    width: 36rem;
+  }
+}
+
+@media screen and (max-width: 388px) {
+  .reviews .cards-cont .rev-card {
+    min-height: 50rem;
+  }
+}
+
+@media screen and (max-width: 324px) {
+  .reviews .cards-cont .rev-card {
+    min-height: 55rem;
+  }
 }
 
 .about {
@@ -692,6 +733,8 @@ header nav .desk-menu li .portfolio-btn:hover {
 .prices .prices-cont .price .price-name .price-icon {
   max-height: 2rem;
   margin-right: 1.2rem;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 @media screen and (max-width: 710px) {

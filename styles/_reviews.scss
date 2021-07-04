@@ -43,6 +43,10 @@
             font-family: "Work Sans", sans-serif;
             font-weight: 600;
             font-size: 1.8rem;
+            padding-right: 1rem;
+          }
+          .stars {
+            width: 12rem;
           }
         }
       }
@@ -56,9 +60,56 @@
   }
   .all-revs {
     //font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    transition: all 0.2s ease-in-out;
     &:hover {
-      text-decoration: underline;
+      color: #df050a;
+    }
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .reviews {
+    .cards-cont {
+      .rev-card3 {
+        display: none;
+      }
+      .rev-card {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .reviews {
+    .cards-cont {
+      .rev-card3 {
+        display: flex;
+      }
+      .rev-card {
+        width: 36rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 388px) {
+  .reviews {
+    .cards-cont {
+      .rev-card {
+        min-height: 50rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 324px) {
+  .reviews {
+    .cards-cont {
+      .rev-card {
+        min-height: 55rem;
+      }
     }
   }
 }

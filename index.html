@@ -20,7 +20,7 @@
     <link rel="icon" href="./img/favicon.svg" />
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="https://unpkg.com/feather-icons"></script>
-    <title>Makiažas Vilniuje - proginis, dieninis, vakarinis makiažas</title>
+    <title>Makiažas Vilniuje - proginis, dieninis ar vakarinis</title>
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -39,11 +39,12 @@
 
       <nav>
         <ul class="desk-menu">
-          <!--<li><a class="active id-nav" href="#pradzia">PRADŽIA</a></li>-->
-          <li><a class="id-nav" href="#apie">APIE</a></li>
+          <li><a class="active id-nav">PRADŽIA</a></li>
+          <!-- <li><a class="id-nav" href="#apie">APIE</a></li> -->
           <li><a class="id-nav" href="#kainos">KAINOS</a></li>
           <li><a class="id-nav" href="#kontaktai">KONTAKTAI</a></li>
-          <li><a href="./galerija/" class="portfolio-btn">PORTFOLIO</a></li>
+          <li><a class="id-nav" href="./galerija/">GALERIJA</a></li>
+          <!-- <li><a href="./galerija/" class="portfolio-btn">PORTFOLIO</a></li> -->
         </ul>
       </nav>
     </header>
@@ -76,7 +77,7 @@
 
           <div class="btns">
             <a href="#kontaktai" class="contact-btn btn">UŽSISAKYTI</a>
-            <a href="#" class="portfolio-btn btn">PORTFOLIO</a>
+            <a href="./galerija/" class="portfolio-btn btn">PORTFOLIO</a>
           </div>
         </div>
 
@@ -186,7 +187,7 @@
           </div>
         </div>
 
-        <a href="">
+        <a href="./galerija/">
           <img
             src="./img/make-up-portfolio/13.jpg"
             alt="Modelis"
@@ -197,14 +198,14 @@
       </div>
     </section>
 
-    <section class="reviews swiper-container" id="atsiliepimai">
-      <div class="cards-cont swiper-wrapper">
-        <div class="rev-card swiper-slide">
+    <section class="reviews" id="atsiliepimai">
+      <div class="cards-cont">
+        <div class="rev-card rev-card1">
           <div class="auth-cont">
             <img src="./img/icon-1.jpg" class="auth-pic" />
             <div class="rate-cont">
               <h2>Rūta Masiulienė</h2>
-              <img src="./img/5-star-rating.svg" />
+              <img class="stars" src="./img/5-star-rating.svg" />
             </div>
           </div>
           <p>
@@ -217,12 +218,12 @@
           </p>
         </div>
 
-        <div class="rev-card swiper-slide">
+        <div class="rev-card rev-card2">
           <div class="auth-cont">
             <img src="./img/icon-2.jpg" class="auth-pic" />
             <div class="rate-cont">
               <h2>Nomeda Šidagytė</h2>
-              <img src="./img/5-star-rating.svg" />
+              <img class="stars" src="./img/5-star-rating.svg" />
             </div>
           </div>
           <p>
@@ -237,12 +238,12 @@
           </p>
         </div>
 
-        <div class="rev-card swiper-slide">
+        <div class="rev-card rev-card3">
           <div class="auth-cont">
             <img src="./img/icon-3.jpg" class="auth-pic" />
             <div class="rate-cont">
               <h2>Daisy Evance</h2>
-              <img src="./img/5-star-rating.svg" />
+              <img class="stars" src="./img/5-star-rating.svg" />
             </div>
           </div>
           <p>
@@ -260,7 +261,8 @@
         href="https://paslaugos.lt/gabija-kaminskaite-gv378"
         target="_blank"
         class="all-revs"
-        >Skaityti Visus Atsiliepimus</a
+        >visi atsiliepimai
+        <i class="fas fa-long-arrow-alt-right"></i> paslaugos.lt</a
       >
     </section>
 
@@ -273,7 +275,7 @@
         />
 
         <div class="about-text-cont">
-          <h1>GABIJA_KAMINSKAITĖ</h1>
+          <h1>Gabija Kaminskaitė</h1>
           <ul>
             <li>Naudoju profesionalią aukščiausios kokybės kosmetiką.</li>
             <li>Turiu sukaupus 4 metų patirtį mados makiažo industrijoje.</li>
@@ -439,14 +441,6 @@
       feather.replace();
     </script>
 
-    <script>
-      const swiper = new Swiper(".swiper-container", {
-        // Optional parameters
-        direction: "horizontal",
-        loop: true,
-        spaceBetween: 20,
-        slidesPerView: 1.2,
-      });
-    </script>
+    <script src="./javascript/reviews-toggle.js"></script>
   </body>
 </html>
