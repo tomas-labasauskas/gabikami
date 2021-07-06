@@ -26,6 +26,12 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
@@ -37,17 +43,42 @@
         title="Makiažas Vilniuje"
       />
 
-      <nav>
+      <button class="mob-menu-btn"><i class="fas fa-bars"></i></button>
+
+      <nav class="desktop-menu">
         <ul class="desk-menu">
           <li><a class="active id-nav">PRADŽIA</a></li>
-          <!-- <li><a class="id-nav" href="#apie">APIE</a></li> -->
           <li><a class="id-nav" href="#kainos">KAINOS</a></li>
           <li><a class="id-nav" href="#kontaktai">KONTAKTAI</a></li>
           <li><a class="id-nav" href="./galerija/">GALERIJA</a></li>
-          <!-- <li><a href="./galerija/" class="portfolio-btn">PORTFOLIO</a></li> -->
         </ul>
       </nav>
     </header>
+
+    <nav class="mobile-menu">
+      <ul>
+        <a href="#" class="active id-nav">
+          <div class="mob-link-cont active">
+            <li>PRADŽIA</li>
+          </div></a
+        >
+        <a href="#kainos" class="active id-nav">
+          <div class="mob-link-cont">
+            <li>KAINOS</li>
+          </div></a
+        >
+        <a href="#kontaktai" class="active id-nav">
+          <div class="mob-link-cont">
+            <li>KONTAKTAI</li>
+          </div></a
+        >
+        <a href="./galerija/" class="active id-nav">
+          <div class="mob-link-cont">
+            <li>GALERIJA</li>
+          </div></a
+        >
+      </ul>
+    </nav>
 
     <section class="hero" id="pradzia">
       <div class="hero-cont">
@@ -187,14 +218,42 @@
           </div>
         </div>
 
-        <a href="./galerija/">
-          <img
-            src="./img/make-up-portfolio/13.jpg"
-            alt="Modelis"
-            class="side-pic hero-pic"
-            id="hero-pic"
-          />
-        </a>
+        <div class="swiper-container s2 side-pic hero-pic" id="hero-pic">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                class="side-pic hero-pic"
+                id="hero-pic"
+                src="./img/make-up-portfolio/13.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="side-pic hero-pic"
+                id="hero-pic"
+                src="./img/make-up-portfolio/5.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="side-pic hero-pic"
+                id="hero-pic"
+                src="./img/make-up-portfolio/14.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="side-pic hero-pic"
+                id="hero-pic"
+                src="./img/styling-portfolio/3.jpg"
+              />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </section>
 
@@ -376,8 +435,8 @@
       />
     </section>
 
-    <section class="contact" id="kontaktai">
-      <div class="contact-cont">
+    <section class="contact">
+      <div class="contact-cont" id="kontaktai">
         <form
           action="/iki-pasimatymo/"
           name="Užsakymai"
@@ -431,16 +490,35 @@
         >
       </div>
     </footer>
-    <!-- FONT AWESOME -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
-      integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ=="
-      crossorigin="anonymous"
-    ></script>
+
     <script>
       feather.replace();
     </script>
 
     <script src="./javascript/reviews-toggle.js"></script>
+
+    <script>
+      const swiper2 = new Swiper(".s2", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 5,
+        speed: 1200,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        autoplay: {
+          delay: 3000,
+          slideNext: 2000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+
+    <script src="./javascript/mobile-menu.js"></script>
   </body>
 </html>

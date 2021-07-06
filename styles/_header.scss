@@ -27,6 +27,8 @@ header {
         }
         a {
           opacity: 50%;
+          transition: all 0.2s ease-in-out;
+          cursor: pointer;
           &:hover {
             opacity: 100%;
           }
@@ -46,17 +48,71 @@ header {
       }
     }
   }
+  .mob-menu-btn {
+    background: white;
+    border: none;
+    color: black;
+    font-size: 3.2rem;
+    margin-right: 2rem;
+    display: none;
+  }
 }
 
-@media screen and (max-width: 740px) {
-  header {
-    nav {
-      .desk-menu {
-        min-width: 10rem;
-        .id-nav {
-          display: none;
-        }
+.mobile-menu {
+  width: auto;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+  ul {
+    width: 100%;
+    a {
+      width: 100%;
+    }
+    .mob-link-cont {
+      width: 100%;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      border: black solid 2px;
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        background: rgba(0, 0, 0, 0.123);
       }
+      li {
+        font-size: 1.6rem;
+      }
+    }
+    .mob-link-cont.active {
+      background: black;
+      li {
+        color: white;
+      }
+    }
+  }
+
+  display: none;
+}
+
+@media screen and (max-width: 670px) {
+  header {
+    .mob-menu-btn {
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        color: #df050a;
+      }
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  header {
+    .desktop-menu {
+      display: none;
     }
   }
 }

@@ -9,6 +9,19 @@
   min-height: 65rem;
   transition: all 0.2s ease-in-out;
   margin-top: 0rem;
+  .s2 {
+    max-width: 33rem;
+    margin-right: 2rem;
+  }
+  .swiper-pagination-bullet {
+    opacity: 1;
+    //border: white solid 1px;
+    background-color: rgba(255, 255, 255, 0.363);
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #df050a;
+  }
+
   //background: pink;
   .hero-pic {
     height: 55rem;

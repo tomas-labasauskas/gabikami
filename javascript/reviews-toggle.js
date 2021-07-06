@@ -8,8 +8,8 @@ const max_width_640 = window.matchMedia("(max-width: 640px)");
 
 function match() {
   max_width_640.matches
-    ? reviews.classList.add("swiper-container")
-    : reviews.classList.remove("swiper-container");
+    ? reviews.classList.add("swiper-container", "s1")
+    : reviews.classList.remove("swiper-container", "s1");
   max_width_640.matches
     ? cards_cont.classList.add("swiper-wrapper")
     : cards_cont.classList.remove("swiper-wrapper");
@@ -30,7 +30,7 @@ match();
 
 function reload_on() {
   if (window.innerWidth < 640) {
-    var swiper = new Swiper(".swiper-container", {
+    var swiper1 = new Swiper(".s1", {
       // Optional parameters
       direction: "horizontal",
       loop: true,

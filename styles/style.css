@@ -148,6 +148,9 @@ header nav .desk-menu li .active {
 
 header nav .desk-menu li a {
   opacity: 50%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 header nav .desk-menu li a:hover {
@@ -169,11 +172,76 @@ header nav .desk-menu li .portfolio-btn:hover {
   color: white;
 }
 
-@media screen and (max-width: 740px) {
-  header nav .desk-menu {
-    min-width: 10rem;
+header .mob-menu-btn {
+  background: white;
+  border: none;
+  color: black;
+  font-size: 3.2rem;
+  margin-right: 2rem;
+  display: none;
+}
+
+.mobile-menu {
+  width: auto;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+  display: none;
+}
+
+.mobile-menu ul {
+  width: 100%;
+}
+
+.mobile-menu ul a {
+  width: 100%;
+}
+
+.mobile-menu ul .mob-link-cont {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: black solid 2px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.mobile-menu ul .mob-link-cont:hover {
+  background: rgba(0, 0, 0, 0.123);
+}
+
+.mobile-menu ul .mob-link-cont li {
+  font-size: 1.6rem;
+}
+
+.mobile-menu ul .mob-link-cont.active {
+  background: black;
+}
+
+.mobile-menu ul .mob-link-cont.active li {
+  color: white;
+}
+
+@media screen and (max-width: 670px) {
+  header .mob-menu-btn {
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    display: block;
   }
-  header nav .desk-menu .id-nav {
+  header .mob-menu-btn:hover {
+    cursor: pointer;
+    color: #df050a;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  header .desktop-menu {
     display: none;
   }
 }
@@ -199,6 +267,20 @@ header nav .desk-menu li .portfolio-btn:hover {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   margin-top: 0rem;
+}
+
+.hero .s2 {
+  max-width: 33rem;
+  margin-right: 2rem;
+}
+
+.hero .swiper-pagination-bullet {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.363);
+}
+
+.hero .swiper-pagination-bullet-active {
+  background-color: #df050a;
 }
 
 .hero .hero-pic {
@@ -429,6 +511,11 @@ header nav .desk-menu li .portfolio-btn:hover {
   margin-bottom: 3rem;
 }
 
+.reviews .cards-cont .rev-card2 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .reviews .cards-cont .rev-card {
   border: black solid 2px;
   border-radius: 16px;
@@ -442,7 +529,6 @@ header nav .desk-menu li .portfolio-btn:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
-  margin: 0.5rem;
 }
 
 .reviews .cards-cont .rev-card .auth-cont {
@@ -508,6 +594,9 @@ header nav .desk-menu li .portfolio-btn:hover {
   .reviews .cards-cont .rev-card3 {
     display: none;
   }
+  .reviews .cards-cont .rev-card2 {
+    margin-right: 0rem;
+  }
   .reviews .cards-cont .rev-card {
     width: 50%;
   }
@@ -521,6 +610,7 @@ header nav .desk-menu li .portfolio-btn:hover {
   }
   .reviews .cards-cont .rev-card {
     width: 36rem;
+    margin: 0.5rem;
   }
 }
 
@@ -886,6 +976,7 @@ header nav .desk-menu li .portfolio-btn:hover {
         -ms-flex-align: center;
             align-items: center;
     margin: 0rem;
+    padding-top: 3rem;
   }
   .contact .contact-cont .contact-info {
     width: 100%;
@@ -895,7 +986,7 @@ header nav .desk-menu li .portfolio-btn:hover {
   .contact .contact-cont form {
     width: 100%;
     margin: 0rem;
-    margin-top: 3rem;
+    padding-top: 3rem;
   }
   .contact .contact-pic {
     display: -webkit-box;
@@ -1003,8 +1094,9 @@ footer .footer-cont #labasauskas:hover {
   line-height: 3rem;
 }
 
-.portfolio-head {
-  background: white;
+.pics-wrap {
+  max-width: 125rem;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1012,53 +1104,13 @@ footer .footer-cont #labasauskas:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 10vh;
-  min-height: 9rem;
-  width: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: fixed;
-  top: 0px;
-}
-
-.portfolio-head a {
-  margin-left: 10rem;
-}
-
-.portfolio-head a svg {
-  fill: black;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.portfolio-head a svg:hover {
-  fill: #df050a;
-}
-
-.portfolio-head h1 {
-  font-size: 2rem;
-  color: black;
-  font-family: "Work Sans", sans-serif;
-  width: 100vw;
-  text-align: center;
-  margin-right: 6rem;
-  font-weight: 600;
-}
-
-.pics-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 15rem;
+  margin-top: 10rem;
   margin-bottom: 10rem;
 }
 
@@ -1075,15 +1127,25 @@ footer .footer-cont #labasauskas:hover {
 
 .pics .pic {
   height: 530px;
-  width: 355px;
+  width: 365px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  border-radius: 8px;
+}
+
+.pics .img-container {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .pics .img-container:hover {
   cursor: pointer;
+}
+
+.pics .img-container:hover .description {
+  background: #df050a;
 }
 
 .pics .img-container .description {
@@ -1095,7 +1157,10 @@ footer .footer-cont #labasauskas:hover {
   padding-top: 20px;
   margin-top: 12px;
   padding-bottom: 20px;
-  background: #302f2f;
+  background: black;
+  border-radius: 8px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .full-screen {
@@ -1111,20 +1176,23 @@ footer .footer-cont #labasauskas:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #1b1b1bc4;
+  background: black;
 }
 
 .full-screen .exit {
-  font-size: 3rem;
+  font-size: 2.4rem;
   background: none;
   margin-left: 2rem;
   margin-top: 7rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  color: white;
+  border: none;
 }
 
 .full-screen .exit:hover {
   color: #df050a;
+  cursor: pointer;
 }
 
 .full-screen .img-cont {
@@ -1150,6 +1218,7 @@ footer .footer-cont #labasauskas:hover {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  border-radius: 8px;
 }
 
 .full-screen .img-cont .description {
@@ -1161,8 +1230,10 @@ footer .footer-cont #labasauskas:hover {
   padding-top: 20px;
   margin-top: 12px;
   padding-bottom: 20px;
-  background: #302f2f;
+  background: black;
+  border: white solid 2px;
   width: 100%;
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 1230px) {
@@ -1193,6 +1264,9 @@ footer .footer-cont #labasauskas:hover {
   }
   .pics .img-container:hover {
     cursor: initial;
+  }
+  .pics .img-container:hover .description {
+    background: black;
   }
   .pics .img-container .description {
     margin-bottom: 24px;

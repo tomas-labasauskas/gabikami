@@ -13,21 +13,58 @@
     <link rel="icon" href="../img/favicon.svg" />
     <link rel="stylesheet" href="../styles/style.css" />
     <title>Makiažo Darbų Galerija | Gabi Kami</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header class="portfolio-head">
-      <a href="../"
-        ><svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          viewBox="0 0 24 24"
-        >
-          <path d="M16 8v-4l8 8-8 8v-4h-16l8-8h8z" /></svg
-      ></a>
-      <h1>Mano darbų galerija:</h1>
+      <img
+        src="../img/logo.svg"
+        alt="Gabi Kami makiažas - logotipas"
+        class="logo"
+        title="Makiažas Vilniuje"
+      />
+
+      <button class="mob-menu-btn"><i class="fas fa-bars"></i></button>
+
+      <nav class="desktop-menu">
+        <ul class="desk-menu">
+          <li><a class="id-nav" href="../">PRADŽIA</a></li>
+          <li><a class="id-nav" href="../#kainos">KAINOS</a></li>
+          <li><a class="id-nav" href="../#kontaktai">KONTAKTAI</a></li>
+          <li><a class="active id-nav">GALERIJA</a></li>
+        </ul>
+      </nav>
     </header>
 
+    <nav class="mobile-menu">
+      <ul>
+        <a href="../" class="active id-nav">
+          <div class="mob-link-cont">
+            <li>PRADŽIA</li>
+          </div></a
+        >
+        <a href="../#kainos" class="active id-nav">
+          <div class="mob-link-cont">
+            <li>KAINOS</li>
+          </div></a
+        >
+        <a href="../#kontaktai" class="active id-nav">
+          <div class="mob-link-cont">
+            <li>KONTAKTAI</li>
+          </div></a
+        >
+        <a class="active id-nav">
+          <div class="mob-link-cont active">
+            <li>GALERIJA</li>
+          </div></a
+        >
+      </ul>
+    </nav>
     <div class="pics-wrap">
       <div class="pics">
         <div class="img-container">
@@ -297,17 +334,20 @@
       </div>
     </div>
 
-    <!-- JQUERY LIBRARY -->
-    <script src="../jquery-3.5.1.min.js"></script>
+    <footer class="portfolio-footer">
+      <div class="footer-cont">
+        <a id="labasauskas" href="https://www.labasauskas.com/" target="blank"
+          >2021 | © Designed by T.L.</a
+        >
+      </div>
+    </footer>
 
-    <!-- FONT AWESOME -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
-      integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ=="
-      crossorigin="anonymous"
-    ></script>
+    <!-- JQUERY LIBRARY -->
+    <script src="../javascript/jquery-3.6.0.min.js"></script>
 
     <!-- FULL SCREEN -->
-    <script src="../galerija.js"></script>
+    <script src="../javascript/galerija.js"></script>
+
+    <script src="../javascript/mobile-menu.js"></script>
   </body>
 </html>
