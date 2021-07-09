@@ -7,6 +7,9 @@
   transition: all 0.2s ease-in-out;
   margin-bottom: 15rem;
   padding-top: 5rem;
+  .contact-pic {
+    height: 49.45rem;
+  }
   .contact-cont {
     width: 100%;
     margin-right: 4rem;
@@ -111,6 +114,7 @@
       display: flex;
       width: 100%;
       margin-bottom: 4rem;
+      height: auto;
     }
   }
 }

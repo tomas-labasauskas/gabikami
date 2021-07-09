@@ -894,6 +894,10 @@ header .mob-menu-btn {
   padding-top: 5rem;
 }
 
+.contact .contact-pic {
+  height: 49.45rem;
+}
+
 .contact .contact-cont {
   width: 100%;
   margin-right: 4rem;
@@ -1033,6 +1037,7 @@ header .mob-menu-btn {
     display: flex;
     width: 100%;
     margin-bottom: 4rem;
+    height: auto;
   }
 }
 
