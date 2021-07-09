@@ -644,6 +644,8 @@ header .mob-menu-btn {
   transition: all 0.2s ease-in-out;
   margin-bottom: 5rem;
   padding-top: 3rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .about .about-pic {

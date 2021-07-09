@@ -7,6 +7,7 @@
   transition: all 0.2s ease-in-out;
   margin-bottom: 5rem;
   padding-top: 3rem;
+  flex-shrink: 0;
   .about-pic {
     max-height: 80rem;
   }
