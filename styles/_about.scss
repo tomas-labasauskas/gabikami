@@ -10,7 +10,7 @@
   padding-top: 3rem;
   flex-shrink: 0;
   .about-pic {
-    //min-height: auto;
+    height: 58rem;
   }
   .about-cont {
     width: 100%;
@@ -100,6 +100,38 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1172px) {
+  .about {
+    .about-pic {
+      height: 60.48rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1151px) {
+  .about {
+    .about-pic {
+      height: 62.96rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .about {
+    .about-pic {
+      height: 65.44rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1148px) {
+  .about {
+    .about-pic {
+      height: 67.92rem;
     }
   }
 }

@@ -649,6 +649,10 @@ header .mob-menu-btn {
       flex-shrink: 0;
 }
 
+.about .about-pic {
+  height: 58rem;
+}
+
 .about .about-cont {
   width: 100%;
   margin-right: 4rem;
@@ -753,6 +757,30 @@ header .mob-menu-btn {
   }
 }
 
+@media screen and (max-width: 1172px) {
+  .about .about-pic {
+    height: 60.48rem;
+  }
+}
+
+@media screen and (max-width: 1151px) {
+  .about .about-pic {
+    height: 62.96rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .about .about-pic {
+    height: 65.44rem;
+  }
+}
+
+@media screen and (max-width: 1148px) {
+  .about .about-pic {
+    height: 67.92rem;
+  }
+}
+
 .prices {
   max-width: 125rem;
   margin: auto;
@@ -770,6 +798,10 @@ header .mob-menu-btn {
   transition: all 0.2s ease-in-out;
   margin-bottom: 5rem;
   padding-top: 5rem;
+}
+
+.prices .prices-pic {
+  height: 58.2rem;
 }
 
 .prices .prices-cont {
