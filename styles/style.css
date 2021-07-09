@@ -647,7 +647,7 @@ header .mob-menu-btn {
 }
 
 .about .about-pic {
-  height: 55.8rem;
+  max-height: 60rem;
 }
 
 .about .about-cont {
