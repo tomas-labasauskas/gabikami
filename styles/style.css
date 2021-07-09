@@ -650,7 +650,7 @@ header .mob-menu-btn {
 }
 
 .about .about-pic {
-  height: auto;
+  min-height: 40rem;
 }
 
 .about .about-cont {
