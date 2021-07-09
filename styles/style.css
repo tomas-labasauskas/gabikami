@@ -63,6 +63,7 @@ li {
 
 .side-pic {
   width: 33rem;
+  height: auto;
   margin-right: 2rem;
   border-radius: 16px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -959,10 +960,6 @@ header .mob-menu-btn {
 
 @media screen and (max-width: 685px) {
   .contact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
     width: auto;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -987,13 +984,6 @@ header .mob-menu-btn {
     width: 100%;
     margin: 0rem;
     padding-top: 3rem;
-  }
-  .contact .contact-pic {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    margin-bottom: 4rem;
   }
 }
 

@@ -87,7 +87,7 @@
 
 @media screen and (max-width: 685px) {
   .contact {
-    flex-direction: column-reverse;
+    // flex-direction: column-reverse;
     width: auto;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -107,11 +107,11 @@
         padding-top: 3rem;
       }
     }
-    .contact-pic {
-      display: flex;
-      width: 100%;
-      margin-bottom: 4rem;
-    }
+    // .contact-pic {
+    //   display: flex;
+    //   width: 100%;
+    //   margin-bottom: 4rem;
+    // }
   }
 }
 
