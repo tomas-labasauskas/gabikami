@@ -629,6 +629,7 @@ header .mob-menu-btn {
 
 .about {
   max-width: 125rem;
+  height: 100%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -646,10 +647,6 @@ header .mob-menu-btn {
   padding-top: 3rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-}
-
-.about .about-pic {
-  max-height: 80rem;
 }
 
 .about .about-cont {
