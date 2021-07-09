@@ -728,6 +728,7 @@ header .mob-menu-btn {
         -ms-flex-direction: column;
             flex-direction: column;
     border: none;
+    height: 100%;
   }
   .about .about-cont #profile-pic {
     width: 100%;
