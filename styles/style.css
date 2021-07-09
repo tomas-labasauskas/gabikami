@@ -311,7 +311,7 @@ header .mob-menu-btn {
 
 .hero .hero-cont .hero-text h1 {
   font-weight: 600;
-  letter-spacing: 3px;
+  letter-spacing: 0.3rem;
   line-height: 3.6rem;
   font-size: 2.6rem;
 }
