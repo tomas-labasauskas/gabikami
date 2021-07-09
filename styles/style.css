@@ -649,6 +649,10 @@ header .mob-menu-btn {
       flex-shrink: 0;
 }
 
+.about .about-pic {
+  height: auto;
+}
+
 .about .about-cont {
   width: 100%;
   margin-right: 4rem;
