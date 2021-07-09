@@ -737,6 +737,8 @@ header .mob-menu-btn {
     border: black solid 2px;
     border-radius: 16px;
     margin-left: 0rem;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   .about .about-cont .about-text-cont h1 {
     margin-top: 5rem;
