@@ -87,13 +87,12 @@
 
 @media screen and (max-width: 685px) {
   .contact {
-    // flex-direction: column-reverse;
+    flex-direction: column-reverse;
     width: auto;
     margin-left: 2rem;
     margin-right: 2rem;
     .contact-cont {
-      // flex-direction: column-reverse;
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: center;
       margin: 0rem;
       padding-top: 3rem;
@@ -101,7 +100,6 @@
         width: 100%;
         margin: 0rem;
         padding-bottom: 5rem;
-        margin-top: 3rem;
       }
       form {
         width: 100%;
@@ -109,11 +107,11 @@
         padding-top: 3rem;
       }
     }
-    // .contact-pic {
-    //   display: flex;
-    //   width: 100%;
-    //   margin-bottom: 4rem;
-    // }
+    .contact-pic {
+      display: flex;
+      width: 100%;
+      margin-bottom: 4rem;
+    }
   }
 }
 
