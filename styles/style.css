@@ -915,8 +915,17 @@ header .mob-menu-btn {
   border: black solid 2px;
   border-radius: 16px;
   height: 100%;
-  margin-left: 3rem;
-  width: 60%;
+  width: 100%;
+}
+
+.contact .contact-cont .contact-info #rezervuoti-text-cont {
+  margin-top: 7rem;
+  margin-right: 4rem;
+}
+
+.contact .contact-cont .contact-info #rezervuoti-btn-cont {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 
 .contact .contact-cont .contact-info .line-info {
@@ -932,6 +941,10 @@ header .mob-menu-btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contact .contact-cont .contact-info .line-info .rezervuoti-text {
+  margin-left: 0rem;
 }
 
 .contact .contact-cont .contact-info .line-info p {
@@ -982,24 +995,6 @@ header .mob-menu-btn {
   background: #df050a;
 }
 
-@media screen and (max-width: 1120px) {
-  .contact .contact-cont {
-    margin-right: 2rem;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .contact .contact-cont .contact-info {
-    width: 50%;
-  }
-  .contact .contact-cont form {
-    width: 50%;
-  }
-  .contact .contact-pic {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 685px) {
   .contact {
     -webkit-box-orient: vertical;
@@ -1024,7 +1019,6 @@ header .mob-menu-btn {
   .contact .contact-cont .contact-info {
     width: 100%;
     margin: 0rem;
-    padding-bottom: 5rem;
   }
   .contact .contact-cont form {
     width: 100%;
@@ -1043,7 +1037,7 @@ header .mob-menu-btn {
 
 @media screen and (max-width: 330px) {
   .contact .contact-cont .contact-info .line-info {
-    margin-left: 1.5rem;
+    margin-left: 2rem;
   }
 }
 

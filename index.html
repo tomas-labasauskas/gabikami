@@ -439,7 +439,7 @@
 
     <section class="contact">
       <div class="contact-cont" id="kontaktai">
-        <form
+        <!-- <form
           action="/iki-pasimatymo/"
           name="Užsakymai"
           method="POST"
@@ -460,12 +460,14 @@
             autocomplete="off"
             required
           />
+
           <textarea
             name="Žinutė:"
             placeholder="Data, laikas, makiažo tipas ir jūsų norai..."
           ></textarea>
           <button type="submit" class="btn send-btn">SIŲSTI</button>
-        </form>
+        </form> -->
+
         <div class="contact-info">
           <div class="line-info">
             <i data-feather="mail"></i>
@@ -478,6 +480,30 @@
           <div class="line-info">
             <i data-feather="phone"></i>
             <p>+370 662 00010</p>
+          </div>
+          <div class="line-info" id="rezervuoti-text-cont">
+            <p class="rezervuoti-text">
+              Galite pasirinkti iš laisvų laikų kalendoriuje:
+            </p>
+          </div>
+          <div class="line-info" id="rezervuoti-btn-cont">
+            <!-- Calendly link widget begin -->
+            <link
+              href="https://assets.calendly.com/assets/external/widget.css"
+              rel="stylesheet"
+            />
+            <script
+              src="https://assets.calendly.com/assets/external/widget.js"
+              type="text/javascript"
+              async
+            ></script>
+            <a
+              href=""
+              class="btn rezervuoti-btn"
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/gabikami/makiazas?hide_gdpr_banner=1&text_color=000000&primary_color=df050a'});return false;"
+              >Rezervuoti Internetu</a
+            >
+            <!-- Calendly link widget end -->
           </div>
         </div>
       </div>

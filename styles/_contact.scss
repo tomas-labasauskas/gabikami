@@ -20,14 +20,25 @@
       border: black solid 2px;
       border-radius: 16px;
       height: 100%;
-      margin-left: 3rem;
-      width: 60%;
+      //margin-left: 3rem;
+      width: 100%;
+      #rezervuoti-text-cont {
+        margin-top: 7rem;
+        margin-right: 4rem;
+      }
+      #rezervuoti-btn-cont {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+      }
       .line-info {
         display: flex;
         flex-direction: row;
         margin-left: 4rem;
         margin-top: 5rem;
         align-items: center;
+        .rezervuoti-text {
+          margin-left: 0rem;
+        }
         p {
           margin-left: 2rem;
         }
@@ -73,17 +84,17 @@
 @media screen and (max-width: 1120px) {
   .contact {
     .contact-cont {
-      margin-right: 2rem;
-      justify-content: space-between;
+      //margin-right: 2rem;
+
       .contact-info {
-        width: 50%;
+        //width: 50%;
       }
       form {
-        width: 50%;
+        //width: 50%;
       }
     }
     .contact-pic {
-      display: none;
+      //display: none;
     }
   }
 }
@@ -102,7 +113,7 @@
       .contact-info {
         width: 100%;
         margin: 0rem;
-        padding-bottom: 5rem;
+        //padding-bottom: 5rem;
       }
       form {
         width: 100%;
@@ -124,7 +135,7 @@
     .contact-cont {
       .contact-info {
         .line-info {
-          margin-left: 1.5rem;
+          margin-left: 2rem;
         }
       }
     }
